@@ -11,7 +11,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to FanAI</h1>
         </header>
         <div>
-          <Chart/>
+          <Chart />
         </div>
       </div>
     );
