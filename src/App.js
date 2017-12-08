@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
-import Chart from './components/Chart';
+import ReactHighCharts from 'react-highcharts';
+import example1 from './config/chart1.json';
+import example2 from './config/chart2.json';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src='./fanai_logo.png' className="App-logo" alt="FanAI" />
-          <h1 className="App-title">Welcome to FanAI</h1>
+          <h1 className="App-title">Welcome to Highcharts Example</h1>
         </header>
         <div>
-          <Chart />
+        <ReactHighCharts config={example1} ref="chart" />
+        <ReactHighCharts config={example2} ref="chart" />        
         </div>
       </div>
     );
